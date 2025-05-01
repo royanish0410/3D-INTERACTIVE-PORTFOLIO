@@ -769,91 +769,93 @@ const projects: Project[] = [
   // },
 
   // +
-  { // 01. AI Docker file optimizer project
-    id: "aidockerfileoptimizer",
-    category: "AI and DevOps",
-    title: "AI Dockerfile Optimizer",
-    src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
+  { // 01. Disaster Management System
+    id: "suraksha.ai",
+    category: "AI and Full-Stack",
+    title: "Disaster Management System",
+    src: "/assets/projects-screenshots/disastermanagementsystem/1.png",
     screenshots: ["1.png", "2.png", "3.png"],
-    live: "https://ai-docker-file-optimizer.netlify.app/",
-    github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
+    live: "https://disaster-management-project-self.vercel.app/",
+    github:"https://github.com/ankitku3101/disaster-management-project",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
+      frontend: [PROJECT_SKILLS.ts, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.js],
+      backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.mongo],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
+            Collaborated with a team to build a real-time Disaster Management                      
+            Dashboard for improved emergency response using live data visualization, location
+            based alerts, and AI-driven safety tips.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/aidockerfileoptimizer/1.png`,
-              `${BASE_PATH}/aidockerfileoptimizer/2.png`,
-              `${BASE_PATH}/aidockerfileoptimizer/3.png`,
+              `${BASE_PATH}/disastermanagementsystem/1.png`,
+              `${BASE_PATH}/disastermanagementsystem/2.png`,
+              `${BASE_PATH}/disastermanagementsystem/3.png`,
             ]}
           />
         </div>
       );
     },
   },
-  { // 02. FinanceMe project
-    id: "financeme",
-    category: "DevOps in Banking and Finance",
-    title: "FinanceMe: Complete DevOps Capstone Project",
-    src: "/assets/projects-screenshots/financeme/1.png",
-    screenshots: ["/assets/projects-screenshots/financeme/1.png"],
+  { // 02. E-Learn-Platform
+    id: "Unilearn",
+    category: "Full-Stack",
+    title: "E-Learn-Platform",
+    src: "/assets/projects-screenshots/Unilearn/1.png",
+    screenshots: ["/assets/projects-screenshots/Unilearn/1.png"],
     skills: {
       frontend: [
-        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.next,
         PROJECT_SKILLS.css,
         PROJECT_SKILLS.js,
-        PROJECT_SKILLS.bootstrap,
+        PROJECT_SKILLS.ts,
       ],
       backend: [
-        PROJECT_SKILLS.java,
-        PROJECT_SKILLS.maven,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.express,
         PROJECT_SKILLS.postgres,
       ],
     },
-    live: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    live: "https://unilearn-one.vercel.app/",
+    github: "https://github.com/ankitku3101/e-learn-platform",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            FinanceMe: Complete DevOps Capstone Project
+            Unilearn: Complete E-Learn-Platform
           </TypographyP>
           <TypographyP className="font-mono ">
-            This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?
+            Unilearn is a full-stack web-based e-learning platform built
+            to simplify and enhance the academic experience for colleges. It bridges
+            communication gaps, streamlines course handling, and brings together students,
+            faculty, and admins on a unified digital platform.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Key Objectives </TypographyH3>
           <p className="font-mono mb-2">
-            The project is divided into three main phases:
-            1.Automating Infrastructure Provisioning
-            2.Build and Deployment Automation
-            3.Continuous Monitoring
+            The project is divided into four main phases:
+            1.Enable smooth communication between students and faculty.
+            2.Centralize lecture delivery, assignment submissions, and quizzes.
+            3.Provide real-time academic performance tracking.
+            4.Create a scalable solution that adapts to various institutions.
+            Login Credentials-for student - ankit123@gmail.com (username) /pw - ankit123 credentials for faculty - syed123@gmail.com (username) /pw - syed123
+            you can create your own credentials by visting - /admin/create-user
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/1.png`,
-              `${BASE_PATH}/financeme/2.png`,
+              `${BASE_PATH}/Unilearn/3.png`,
+              `${BASE_PATH}/Unilearn/4.png`,
+              `${BASE_PATH}/Unilearn/2.png`,
             ]}
           />
+          {/*
           <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
           <p className="font-mono mb-2">
-          Terraform is used to create 4 AWS EC2 instances:
+            Terraform is used to create 4 AWS EC2 instances:
             Jenkins Master Node (for CI/CD pipeline management)
             Build Server (for application and Docker image builds)
             Production Server (for deploying Dockerized applications)
@@ -891,7 +893,7 @@ const projects: Project[] = [
                 `${BASE_PATH}/financeme/8.png`,
                 `${BASE_PATH}/financeme/9.png`,
                 `${BASE_PATH}/financeme/10.png`,
-            ]} />
+            ]} />*/}
         </div>
       );
     },
@@ -962,72 +964,76 @@ const projects: Project[] = [
       );
     },
   },
-  { // 04. Smart parking assitant
-    id: "smartparkingassitant",
-    category: "IoT",
-    title: "Smart Parking Assistant",
-    src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
-    screenshots: ["01.jpeg", "03.png"],
-    live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+  { // 04. Landing Page
+    id: "landingpage",
+    category: "Frontend Development",
+    title: "AI Startup Landing Page",
+    src: "/assets/projects-screenshots/landingpage/1.png",
+    screenshots: ["1.png", "3.png"],
+    live: "https://aivisionary.vercel.app/",
+    github:"https://github.com/royanish0410/frontend-tribe-ai-startup-landing-page-template",
     skills: {
-      frontend: [PROJECT_SKILLS.python],
-      backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.framerMotion,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
+      ],
+
+      backend: [],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+             Built an animated AI startup landing page using Next.js, Tailwind CSS, 
+             Framer Motion, and Lottie, with a focus on responsive UI and modern design.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartparkingassitant/01.jpeg`,
-              `${BASE_PATH}/smartparkingassitant/03.png`,
-              `${BASE_PATH}/smartparkingassitant/04.jpg`,
+              `${BASE_PATH}/landingpage/1.png`,
+              `${BASE_PATH}/landingpage/3.png`,
+              `${BASE_PATH}/landingpage/4.png`,
             ]}
           />
         </div>
       );
     },
   },
-  { // 05. Smart Job Tracker project
-    id: "smartjobtracker",
-    category: "Full stack",
-    title: "Smart Job Tracker",
-    src: "/assets/projects-screenshots/smartjobtracker/02.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+  { // 05. Talent Bridge
+    id: "talentbridge",
+    category: "AI and Full-stack",
+    title: "AI-Powered Talent Bridge",
+    src: "/assets/projects-screenshots/talentbridge/1.png",
+    screenshots: ["1.png", "2.jpg", "3.jpg","4.jpg","05.png","06.png"],
+    live: "",
+    github:"https://github.com/ankitku3101/TalentBridge",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.firebase],
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.ts, PROJECT_SKILLS.html],
+      backend: [PROJECT_SKILLS.openai, PROJECT_SKILLS.mongo, PROJECT_SKILLS.express],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
+            Our platform is an all-in-one career ecosystem connecting students,
+            universities, and employers through role-specific dashboards.
+            It features a centralized database for managing user profiles, skills, and recruiter data.
+            Students benefit from an AI-powered resume builder and personalized job recommendations.
+            Universities use analytics for skill gap analysis and targeted training, while employers 
+            leverage an AI-matching engine and ATS tools for efficient hiring.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartjobtracker/01.png`,
-              `${BASE_PATH}/smartjobtracker/02.png`,
-              `${BASE_PATH}/smartjobtracker/03.png`,
-              `${BASE_PATH}/smartjobtracker/04.png`,
-              `${BASE_PATH}/smartjobtracker/05.png`,
-              `${BASE_PATH}/smartjobtracker/06.png`,
-              `${BASE_PATH}/smartjobtracker/07.png`,
+              `${BASE_PATH}/talentbridge/1.png`,
+              `${BASE_PATH}/talentbridge/2.jpg`,
+              `${BASE_PATH}/talentbridge/3.jpg`,
+              `${BASE_PATH}/talentbridge/4.jpg`,
+              `${BASE_PATH}/talentbridge/5.png`,
+              `${BASE_PATH}/talentbridge/6.png`,
             ]}
           />
         </div>

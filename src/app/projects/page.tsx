@@ -11,28 +11,25 @@ import "@splidejs/react-splide/css";
 const PROJECTS = [
   {
     id: 1,
-    name: "AI Dockerfile optimizer",
-    description: `AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization..`,
-    link: "https://ai-docker-file-optimizer.netlify.app/",
+    name: "Disaster Management System",
+    description: `Collaborated with a team to build a real-time Disaster Management                      
+            Dashboard for improved emergency response using live data visualization, location
+            based alerts, and AI-driven safety tips. `,
+    link: "https://disaster-management-project-self.vercel.app/",
     images: [
-      "/assets/projects-screenshots/aidockerfileoptimizer/1.png",
-      "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
-      "/assets/projects-screenshots/aidockerfileoptimizer/3.png",
+      "/assets/projects-screenshots/disastermanagementsystem/1.png",
+      "/assets/projects-screenshots/disastermanagementsystem/2.png",
+      "/assets/projects-screenshots/disastermanagementsystem/3.png",
     ],
   },
   {
     id: 2,
-    name: "financeme",
-    description: `This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?`,
-    link: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    name: "E-Learn-Platform",
+    description: `Unilearn is a full-stack web-based e-learning platform built
+            to simplify and enhance the academic experience for colleges. It bridges
+            communication gaps, streamlines course handling, and brings together students,
+            faculty, and admins on a unified digital platform.`,
+    link: "https://unilearn-one.vercel.app/",
     images: [
       "/assets/projects-screenshots/financeme/1.png",
       "/assets/projects-screenshots/financeme/2.png",
