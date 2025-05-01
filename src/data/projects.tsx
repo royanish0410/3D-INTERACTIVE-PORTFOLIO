@@ -904,8 +904,8 @@ const projects: Project[] = [
     title: "My Portfolio",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
-    live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Abhiz2411/3D-interactive-portfolio",
+    live: "",
+    github:"https://github.com/royanish0410/3D-INTERACTIVE-PORTFOLIO",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -1007,7 +1007,7 @@ const projects: Project[] = [
     category: "AI and Full-stack",
     title: "AI-Powered Talent Bridge",
     src: "/assets/projects-screenshots/talentbridge/1.png",
-    screenshots: ["1.png", "2.jpg", "3.jpg","4.jpg","05.png","06.png"],
+    screenshots: ["1.png", "2.jpg", "3.jpg","4.jpg","5.png","6.png"],
     live: "",
     github:"https://github.com/ankitku3101/TalentBridge",
     skills: {
