@@ -31,16 +31,10 @@ const PROJECTS = [
             faculty, and admins on a unified digital platform.`,
     link: "https://unilearn-one.vercel.app/",
     images: [
-      "/assets/projects-screenshots/financeme/1.png",
-      "/assets/projects-screenshots/financeme/2.png",
-      "/assets/projects-screenshots/financeme/3.png",
-      "/assets/projects-screenshots/financeme/4.png",
-      "/assets/projects-screenshots/financeme/5.png",
-      "/assets/projects-screenshots/financeme/6.png",
-      "/assets/projects-screenshots/financeme/7.png",
-      "/assets/projects-screenshots/financeme/8.png",
-      "/assets/projects-screenshots/financeme/9.png",
-      "/assets/projects-screenshots/financeme/10.png"
+      "/assets/projects-screenshots/Unilearn/1.png",
+      "/assets/projects-screenshots/Unilearn/2.png",
+      "/assets/projects-screenshots/Unilearn/3.png",
+      "/assets/projects-screenshots/Unilearn/4.png",
     ],
   },
   {
