@@ -32,7 +32,7 @@ const config = {
   ],
   author: "Anish Anand",
   email: "anish.anandroy@gmail.com",
-  site: "https://abhijitzende.com",
+  site: "",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
