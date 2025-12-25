@@ -39,6 +39,7 @@ import { VscCode } from "react-icons/vsc";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { TbTerminal2 } from "react-icons/tb";
+import Image from "next/image";
 
 const CONTACT_LINKS = [
   {
@@ -244,7 +245,7 @@ function Page() {
           >
             <div className="flex flex-row lg:flex-col items-center">
               <div className="flex justify-center items-center lg:w-full lg:aspect-square bg-zinc-800 rounded-xl lg:mb-5">
-                <img
+                <Image
                   className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] aspect-square  bg-zinc-800"
                   alt="me"
                   src="/assets/me.jpg"
@@ -286,17 +287,13 @@ function Page() {
             style={{ backdropFilter: "blur(2px)" }}
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
-            <p className="mb-10 text-roboto">
-              Hey there! I'm Anish, a Computer Science undergraduate and aspiring
-              Full Stack Developer with a passion for building web applications and
-              learning new technologies. I'm currently seeking opportunities to 
-              grow, contribute, and work on impactful projects.
-            </p>
-            <p className="mb-10">
-              When I&apos;m not coding, you can find me [Your
-              Interests/Hobbies], exploring new technologies, or sipping coffee
-              while brainstorming my next project.
-            </p>
+              <p className="mb-10 text-roboto">
+                {"Hey there! I'm Anish, a Computer Science undergraduate and aspiring Full Stack Developer with a passion for building web applications and learning new technologies. I'm currently seeking opportunities to grow, contribute, and work on impactful projects."}
+              </p>
+              <p className="mb-10">
+                {"When I'm not coding, you can find me [Your Interests/Hobbies], exploring new technologies, or sipping coffee while brainstorming my next project."}
+              </p>
+
             <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
             <div className="mb-5">
               {!toolsLoaded ? (
