@@ -154,7 +154,7 @@ const AnimatedBackground = () => {
     if (!selectedSkill || !splineApp) return;
     splineApp.setVariable("heading", selectedSkill.label);
     splineApp.setVariable("desc", selectedSkill.shortDescription);
-  }, [selectedSkill]);
+  }, [splineApp]);
 
   // handle keyboard heading and desc visibility
   useEffect(() => {
@@ -205,7 +205,7 @@ const AnimatedBackground = () => {
     handleSplineInteractions();
     handleGsapAnimations();
     setBongoAnimation(getBongoAnimation());
-    setKeycapAnimtations(getKeycapsAnimation());
+    setKeycapAnimtations(getKeycapsAnimation());  
   }, [splineApp]);
 
   useEffect(() => {
